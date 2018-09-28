@@ -18,7 +18,7 @@ You can find a GitHub tutorial [here](https://github.com/AguaClara/aguaclara_tut
 
 1. Below this, write a sentence or two about yourself:
 
-<!--- Fill you answer here. --->
+My name is Isaac Singer. I am from Albany, New York and I am studying engineering at Cornell.
 
 
 
@@ -44,7 +44,7 @@ To signify a header, use `#`. The more `#` you use, the smaller the header gets.
 
 1. Make a header of similar size as Header 3 with whatever text you want:
 
-<!--- Fill you answer here. --->
+###TestingHeader
 
 ## Emphasis
 There are several different ways to emphasize text: *italics*, **bold**, ***combined***, and ~~strikethrough~~.
@@ -56,7 +56,8 @@ There are several different ways to emphasize text: *italics*, **bold**, ***comb
 
 1. Write 4 of your favorite words using each type of emphasis:
 
-<!--- Fill you answer here. --->
+*AguaClara* **Cornell** ***Winter*** ~~dissolved gas~~
+
 
 
 ## Lists
@@ -68,7 +69,11 @@ Lists are very easy to do. For a bulleted list, use the asterisk and for a numbe
 
 1. Now try it out for yourself. Write down a list of things you hope to achieve this semester, and elaborate on them with sub items:
 
-<!--- Fill you answer here. --->
+* I hope my subteam is able to create a working prototype.
+  - This should include a fluidized bed and a spiraling pipe system to effectively remove dissolved gasses
+* I hope to develop a working fluidized bed to removed dissolved gasses from the water
+  - The fluidized bed should have sand in it to encourage bubble formation.
+
 
 ## Images
 To input images, you'll either need an image URL or a file path to your image. For AguaClara work, your repository should have a folder for images where you can get an image URL or file path from. In this tutorial, I've made an image folder with a picture in the `aguaclara_tutorial` repository.
@@ -100,7 +105,12 @@ Image with Height and Width Adjusted:
 
 1. Make an images folder in your personal repository, and import an image of your hometown or pet from that folder. Do it unformatted using the image URL and the relative file path method, then do it again but instead change the height and width of your image:
 
-<!--- Fill you answer here. --->
+![cornell_summertime_pic](https://github.com/isaacsinger8/PersonalRepository/blob/master/images/Testimage.jpg?raw=true)
+
+
+<img src="https://github.com/isaacsinger8/PersonalRepository/blob/master/images/Testimage.jpg?raw=true"
+height=200 width=100>
+
 
 
 
@@ -143,7 +153,10 @@ When making tables, it's not important that the lines match up. For example, the
 
 1. Create a table listing your 3 favorite animals, foods, books, and places on campus. Try out the different cell justifications:
 
-<!--- Fill you answer here. --->
+| Animals   | Books                 | Places on Campus |
+| Dogs      | Unbroken              | The slope        |
+| Giraffes  | Six Innings           | CTB              |
+| Penguins  | Danger in the Desert  | Ho Plaza         |
 
 
 
@@ -162,12 +175,19 @@ For larger code blocks where you report multiple lines of code, you always start
 
 1. Below, write a Python print function with a different string using syntax highlighting:
 
-<!--- Fill you answer here. --->
+~~~
+'''python
+print("this is a text string")
+'''
+~~~
 
 2. Now write a block of Python code for that same print statement:
 
-<!--- Fill you answer here. --->
-
+~~~
+'''python
+print("this is a text string")
+'''
+~~~
 
 
 ## LaTeX Equations
@@ -177,8 +197,8 @@ $$ Re_D = \frac{uD}{\nu} $$
 
 1. Try it on your own! Write your favorite equation using LaTeX source code and toggle the LaTeX preview to see it formatted:
 
-<!--- Fill you answer here. --->
 
+$$ E = MC^2 $$
 
 # Using Python and Running it With Hydrogen in Markdown
 
@@ -213,14 +233,22 @@ These questions are meant to test what you've learned from the Python Basics tut
 
 1. Write a conditional statement with 3 conditions: when x is 10, when x is 1, and when x is anything other than 1 or 10. For each condition, have your code print what the value is or isn't.
 
-<!--- Fill you answer here. --->
+if x = 10:
+  print(10
+elif x = 1:
+  print(1)
+else:
+  print(x)
 
 
 
 
 2. Write a `for` loop that takes a variable with an initial value of 0, and adds the current index to the previous value of that variable (i.e. you variable should grow in size every iteration). Perform the iteration 20 times, and have the final value be printed at the end.
 
-<!--- Fill you answer here. --->
+x = 0
+for x in range(20):
+  x +=1
+print(x)
 
 
 
@@ -232,13 +260,25 @@ These questions are meant to test what you've learned from the Python Basics tut
 
 3. Using the NumPy package and `unit_registry`, calculate the value of sin(4) meters, and use the sigfig function from the unit unit_registry module in aide_design to get your answer to 2 sig-figs. *(Hint: You will need to import these packages. Remember how to do that?)*
 
-<!--- Fill you answer here. --->
+import NumPy
+import unit_registry
+
+
+u.default_format = ".2f"
+num = (sin(4) * u.m)
+print(num)
+
 
 
 
 4. Create a `list` of length 5, and verify the length of your list. Once you've done that, turn your `list` into an `array` and apply units of meters to it. After that, create a 5x5 `array`, extract the middle row and middle column. Verify the size of your 2D `array` and apply units of liters to it.
 
-<!--- Fill you answer here. --->
+number_list = (1,2,3,4,5)
+
+number_array = []
+
+for item in number_list:
+    number_array.append(item)
 
 
 
